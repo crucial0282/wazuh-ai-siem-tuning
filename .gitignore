@@ -1,0 +1,46 @@
+# Python virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Runtime SIEM data
+data/
+
+# AI-generated reports
+reports/
+
+# Pipeline logs
+logs/
+*.log
+
+# Environment variables and secrets
+.env
+.env.*
+*.env
+
+# Credentials and certificates
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+
+# Local configuration
+config.local.*
+secrets.*
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
