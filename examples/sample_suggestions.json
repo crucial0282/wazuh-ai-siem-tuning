@@ -1,0 +1,18 @@
+{
+  "analysis_time": "2026-01-01T10:15:30Z",
+  "threat_summary": "Repeated authentication failures were observed during the current analysis window. The activity should be reviewed for potential password guessing while accounting for legitimate authentication errors.",
+  "new_rule_suggestions": [
+    {
+      "id": "100001",
+      "title": "Repeated Authentication Failure Detection",
+      "severity": "high",
+      "mitre_tactic": "T1110 - Brute Force",
+      "rationale": "Repeated authentication failures were observed and may indicate password guessing activity.",
+      "wazuh_rule_xml": "<rule id=\"100001\" level=\"10\"><if_sid>5503</if_sid><description>Repeated authentication failure activity detected</description></rule>",
+      "false_positive_notes": "Legitimate users repeatedly entering incorrect credentials may trigger this detection.",
+      "xml_valid": true,
+      "xml_validation_note": null
+    }
+  ],
+  "changes_from_last_run": "Example output generated for repository documentation."
+}
