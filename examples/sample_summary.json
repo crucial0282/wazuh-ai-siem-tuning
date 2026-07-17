@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-01-01T10:15:00",
+  "current_window": {
+    "total_alerts": 150,
+    "filtered_alerts": 85,
+    "top_rules": [
+      {
+        "rule_id": "5503",
+        "rule_level": 5,
+        "rule_description": "PAM: User login failed.",
+        "groups": [
+          "pam",
+          "syslog",
+          "authentication_failed"
+        ],
+        "mitre": {
+          "id": [
+            "T1110.001"
+          ],
+          "tactic": [
+            "Credential Access"
+          ]
+        },
+        "count": 35
+      }
+    ],
+    "high_severity_sample": [],
+    "unique_source_ips": [
+      {
+        "ip": "203.0.113.10",
+        "count": 20
+      }
+    ],
+    "agents_involved": [
+      {
+        "agent": "example-linux-agent",
+        "alert_count": 85
+      }
+    ]
+  },
+  "historical_window": {
+    "total_alerts": 2500,
+    "filtered_alerts": 1300,
+    "top_rules": [
+      {
+        "rule_id": "5503",
+        "rule_level": 5,
+        "rule_description": "PAM: User login failed.",
+        "count": 300
+      }
+    ],
+    "agents_involved": [
+      {
+        "agent": "example-linux-agent",
+        "alert_count": 900
+      }
+    ]
+  },
+  "diff": {
+    "new_rules_this_window": [],
+    "recurring_rule_ids": [
+      "5503"
+    ],
+    "resolved_rule_ids": [],
+    "new_rule_count": 0,
+    "recurring_rule_count": 1,
+    "resolved_rule_count": 0
+  }
+}
