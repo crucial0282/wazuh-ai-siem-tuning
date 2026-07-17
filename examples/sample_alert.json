@@ -1,0 +1,30 @@
+{
+  "id": "example-alert-id",
+  "rule_id": "5503",
+  "rule_level": 5,
+  "rule_description": "PAM: User login failed.",
+  "groups": [
+    "pam",
+    "syslog",
+    "authentication_failed"
+  ],
+  "agent_id": "001",
+  "agent_name": "example-linux-agent",
+  "timestamp": "2026-01-01T10:00:00.000Z",
+  "srcip": "203.0.113.10",
+  "data": {
+    "dstuser": "example-user"
+  },
+  "full_log": "Example sanitized authentication failure log",
+  "mitre": {
+    "technique": [
+      "Password Guessing"
+    ],
+    "id": [
+      "T1110.001"
+    ],
+    "tactic": [
+      "Credential Access"
+    ]
+  }
+}
